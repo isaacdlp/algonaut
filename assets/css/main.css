@@ -67,6 +67,10 @@ p.just {
     text-align: justify;
 }
 
+section#home {
+    min-height: 400px;
+}
+
 img.padded {
     margin-bottom: 20px;
 }
@@ -87,6 +91,14 @@ img.padded {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width: 450px) {
+
+    #algonaut {
+        display: none;
+    }
+
 }
 
 /* Containers */
