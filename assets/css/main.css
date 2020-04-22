@@ -2202,7 +2202,8 @@ input, select, textarea {
 }
 
 a {
-    color: #8a4680;
+    /* color: #8a4680; */
+    color: #080808
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -2455,7 +2456,7 @@ input[type="reset"].special,
 input[type="button"].special,
 button.special,
 .button.special {
-    background-color: #8a4680;
+    background-color: #080808;
     color: #ffffff !important;
 }
 
@@ -2661,8 +2662,8 @@ input[type="password"]:focus,
 input[type="email"]:focus,
 select:focus,
 textarea:focus {
-    border-color: #8a4680;
-    box-shadow: 0 0 0 1px #8a4680;
+    border-color: #080808;
+    box-shadow: 0 0 0 1px #080808;
 }
 
 .select-wrapper:before {
@@ -2682,15 +2683,15 @@ input[type="radio"] + label:before {
 
 input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
-    background-color: #8a4680;
-    border-color: #8a4680;
+    background-color: #080808;
+    border-color: #080808;
     color: #ffffff;
 }
 
 input[type="checkbox"]:focus + label:before,
 input[type="radio"]:focus + label:before {
-    border-color: #8a4680;
-    box-shadow: 0 0 0 1px #8a4680;
+    border-color: #080808;
+    box-shadow: 0 0 0 1px #080808;
 }
 
 ::-webkit-input-placeholder {
@@ -3098,7 +3099,7 @@ table.alt tbody tr td {
 }
 
 .wrapper.style1 {
-    background-color: #8a4680;
+    background-color: #080808;
     color: #e2d1df;
 }
 
@@ -3200,7 +3201,7 @@ table.alt tbody tr td {
 .wrapper.style1 button.special,
 .wrapper.style1 .button.special {
     background-color: #ffffff;
-    color: #8a4680 !important;
+    color: #080808 !important;
 }
 
 .wrapper.style1 label {
@@ -3244,7 +3245,7 @@ table.alt tbody tr td {
 .wrapper.style1 input[type="radio"]:checked + label:before {
     background-color: #ffffff;
     border-color: #ffffff;
-    color: #8a4680;
+    color: #080808;
 }
 
 .wrapper.style1 input[type="checkbox"]:focus + label:before,
@@ -3315,7 +3316,7 @@ table.alt tbody tr td {
 }
 
 .wrapper.style2 a {
-    color: #8a4680;
+    color: #080808;
 }
 
 .wrapper.style2 h1, .wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6 {
@@ -3387,7 +3388,7 @@ table.alt tbody tr td {
 .wrapper.style2 input[type="button"].special,
 .wrapper.style2 button.special,
 .wrapper.style2 .button.special {
-    background-color: #8a4680;
+    background-color: #080808;
     color: #ffffff !important;
 }
 
@@ -3425,8 +3426,8 @@ table.alt tbody tr td {
 .wrapper.style2 input[type="email"]:focus,
 .wrapper.style2 select:focus,
 .wrapper.style2 textarea:focus {
-    border-color: #8a4680;
-    box-shadow: 0 0 0 1px #8a4680;
+    border-color: #080808;
+    box-shadow: 0 0 0 1px #080808;
 }
 
 .wrapper.style2 .select-wrapper:before {
@@ -3446,15 +3447,15 @@ table.alt tbody tr td {
 
 .wrapper.style2 input[type="checkbox"]:checked + label:before,
 .wrapper.style2 input[type="radio"]:checked + label:before {
-    background-color: #8a4680;
-    border-color: #8a4680;
+    background-color: #080808;
+    border-color: #080808;
     color: #ffffff;
 }
 
 .wrapper.style2 input[type="checkbox"]:focus + label:before,
 .wrapper.style2 input[type="radio"]:focus + label:before {
-    border-color: #8a4680;
-    box-shadow: 0 0 0 1px #8a4680;
+    border-color: #080808;
+    box-shadow: 0 0 0 1px #080808;
 }
 
 .wrapper.style2 ::-webkit-input-placeholder {
@@ -3525,7 +3526,7 @@ table.alt tbody tr td {
 }
 
 .wrapper.style3 a {
-    color: #8a4680;
+    color: #080808;
 }
 
 .wrapper.style3 strong, .wrapper.style3 b {
@@ -3617,7 +3618,7 @@ table.alt tbody tr td {
 .wrapper.style3 input[type="button"].special,
 .wrapper.style3 button.special,
 .wrapper.style3 .button.special {
-    background-color: #8a4680;
+    background-color: #080808;
     color: #ffffff !important;
 }
 
@@ -3655,8 +3656,8 @@ table.alt tbody tr td {
 .wrapper.style3 input[type="email"]:focus,
 .wrapper.style3 select:focus,
 .wrapper.style3 textarea:focus {
-    border-color: #8a4680;
-    box-shadow: 0 0 0 1px #8a4680;
+    border-color: #080808;
+    box-shadow: 0 0 0 1px #080808;
 }
 
 .wrapper.style3 .select-wrapper:before {
@@ -3676,15 +3677,15 @@ table.alt tbody tr td {
 
 .wrapper.style3 input[type="checkbox"]:checked + label:before,
 .wrapper.style3 input[type="radio"]:checked + label:before {
-    background-color: #8a4680;
-    border-color: #8a4680;
+    background-color: #080808;
+    border-color: #080808;
     color: #ffffff;
 }
 
 .wrapper.style3 input[type="checkbox"]:focus + label:before,
 .wrapper.style3 input[type="radio"]:focus + label:before {
-    border-color: #8a4680;
-    box-shadow: 0 0 0 1px #8a4680;
+    border-color: #080808;
+    box-shadow: 0 0 0 1px #080808;
 }
 
 .wrapper.style3 ::-webkit-input-placeholder {
@@ -4412,7 +4413,7 @@ body.subpage {
 /* Banner */
 
 .banner {
-    background-color: #8a4680;
+    background-color: #080808;
     color: #e2d1df;
     padding: 8em 0;
     position: relative;
