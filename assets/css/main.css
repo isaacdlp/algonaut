@@ -4725,3 +4725,41 @@ body.is-mobile .banner > article {
     }
 
 }
+
+.bg-danger {
+    background-color: #dc3545 !important
+}
+
+a.bg-danger:focus, a.bg-danger:hover, button.bg-danger:focus, button.bg-danger:hover {
+    background-color: #bd2130 !important
+}
+
+.bg-success {
+    background-color: #28a745 !important
+}
+
+a.bg-success:focus, a.bg-success:hover, button.bg-success:focus, button.bg-success:hover {
+    background-color: #1e7e34 !important
+}
+
+form {
+    text-align: center;
+}
+
+form input, form textarea {
+    margin: 40px auto 40px auto;
+    max-width: 500px;
+}
+
+form textarea {
+    min-height: 200px;
+}
+
+#form-messages {
+    margin: 40px auto 40px auto;
+    max-width: 500px;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
