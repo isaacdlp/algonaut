@@ -1,5 +1,6 @@
 function form_msg(status, message) {
     var formMessages = $('#form-messages');
+    $(formMessages).css('display', 'block');
     $(formMessages).removeClass('bg-danger');
     $(formMessages).removeClass('bg-warn');
     $(formMessages).removeClass('bg-success');
