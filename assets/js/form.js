@@ -1,10 +1,16 @@
+function form_msg(status, message) {
+    var formMessages = $('#form-messages');
+    $(formMessages).removeClass('bg-danger');
+    $(formMessages).removeClass('bg-warn');
+    $(formMessages).removeClass('bg-success');
+    $(formMessages).addClass(status);
+    $(formMessages).text(message);
+}
+
 $(function() {
 
     // Get the form.
     var form = $('#ajax-contact');
-
-    // Get the messages div.
-    var formMessages = $('#form-messages');
 
     // Set up an event listener for the contact form.
     $(form).submit(function(e) {
@@ -14,6 +20,7 @@ $(function() {
         // Serialize the form data.
         var formData = $(form).serialize();
 
+        form_msg('bg-warn', 'Sending message. Just a second');
         // Submit the form using AJAX.
         $.ajax({
             type: 'POST',
@@ -21,19 +28,12 @@ $(function() {
             data: formData
         })
             .done(function(response) {
-                console.log(response)
                 if (response.status == "success") {
                     // Make sure that the formMessages div has the 'success' class.
-                    $(formMessages).removeClass('bg-danger');
-                    $(formMessages).addClass('bg-success');
-                    // Set the message text.
-                    $(formMessages).text('Message sent. We will be in touch shortly!');
+                    form_msg('bg-success', 'Message sent. We will be in touch shortly');
                 } else {
                     // Make sure that the formMessages div has the 'success' class.
-                    $(formMessages).removeClass('bg-success');
-                    $(formMessages).addClass('bg-danger');
-                    // Set the message text.
-                    $(formMessages).text('Message not sent. Please try again!');
+                    form_msg('bg-danger', 'Message not sent. Please try again');
                 }
 
                 // Clear the form.
@@ -41,15 +41,7 @@ $(function() {
             })
             .fail(function(data) {
                 // Make sure that the formMessages div has the 'error' class.
-                $(formMessages).removeClass('bg-success');
-                $(formMessages).addClass('bg-danger');
-
-                // Set the message text.
-                if (data.responseText !== '') {
-                    $(formMessages).text(data.responseText);
-                } else {
-                    $(formMessages).text('Oops! An error occured and your message could not be sent.');
-                }
+                form_msg('bg-danger', 'Oops! An error occured and your message could not be sent.');
             });
 
     });

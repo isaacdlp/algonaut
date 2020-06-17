@@ -4742,6 +4742,14 @@ a.bg-success:focus, a.bg-success:hover, button.bg-success:focus, button.bg-succe
     background-color: #1e7e34 !important
 }
 
+.bg-warn {
+    background-color: #f3c56b !important
+}
+
+a.bg-warn:focus, a.bg-success:hover, button.bg-success:focus, button.bg-success:hover {
+    background-color: #e7bb66 !important
+}
+
 form {
     text-align: center;
 }
