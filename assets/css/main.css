@@ -4772,3 +4772,7 @@ form textarea {
     color: white;
     text-align: center;
 }
+
+div.grid-style {
+    margin-top: 40px;
+}
