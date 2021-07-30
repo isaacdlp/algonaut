@@ -19,7 +19,7 @@ $(function() {
         e.preventDefault();
 
         grecaptcha.ready(function() {
-            grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(function(token) {
+            grecaptcha.execute('6Ld1dMwbAAAAALM4WzgGBZzCrxpDwPOpVbViieC-', {action: 'submit'}).then(function(token) {
 
                 // Serialize the form data.
                 var formData = $(form).serialize();
