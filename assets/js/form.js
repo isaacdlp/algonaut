@@ -21,6 +21,8 @@ $(function() {
         grecaptcha.ready(function() {
             grecaptcha.execute('6Ld1dMwbAAAAALM4WzgGBZzCrxpDwPOpVbViieC-', {action: 'submit'}).then(function(token) {
 
+                $('#token').val(token)
+
                 // Serialize the form data.
                 var formData = $(form).serialize();
 
