@@ -257,10 +257,7 @@
 					<textarea class="form-control" name="message" id="message" required placeholder="Message"></textarea>
 				</div>
 				<div id="form-messages" class="mt-3"></div>
-				<button class="btn g-recaptcha"
-						data-sitekey="6Ld1dMwbAAAAALM4WzgGBZzCrxpDwPOpVbViieC-"
-						data-callback='onSubmit'
-						data-action='submit'>Submit</button>
+				<button class="btn" type="submit">Submit</button>
 			</form>
 
 			<div class="align-center" style="padding-top: 25px;">
@@ -290,7 +287,7 @@
 	</footer>
 
 	<!-- Scripts -->
-	<script src="https://www.google.com/recaptcha/api.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js?render=6Ld1dMwbAAAAALM4WzgGBZzCrxpDwPOpVbViieC-"></script>
 	<script>
 		function onSubmit(token) {
 			document.getElementById("ajax-contact").submit();
