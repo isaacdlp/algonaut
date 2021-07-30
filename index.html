@@ -246,8 +246,12 @@
 				<h2>Contact Us</h2>
 			</header>
 
-			<form id="ajax-contact" method="post" action="https://algonaut.herokuapp.com/algo-mail">
-				<input type="text" name="token" id="token"/>
+			<form id="ajax-contact" method="post" action="https://algonaut.herokuapp.com/algo-mail"
+				  msg-sending="Sending the message. One moment."
+				  msg-success="Message sent! Will reply shortly."
+				  msg-failure="Message not sent. Please try again."
+				  msg-error="Oops! There was an error and the message could not be sent.">
+				<input type="hidden" name="token" id="token"/>
 				<div class="input-field">
 					<input type="text" class="form-control" name="name" id="name" required placeholder="Name">
 				</div>

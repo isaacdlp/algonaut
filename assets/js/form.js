@@ -21,12 +21,22 @@ $(function() {
         grecaptcha.ready(function() {
             grecaptcha.execute('6Ld1dMwbAAAAALM4WzgGBZzCrxpDwPOpVbViieC-', {action: 'submit'}).then(function(token) {
 
-                $('#token').val(token)
+                var msgSending = form.attr("msg-sending");
+                var msgSuccess = form.attr("msg-success");
+                var msgFailure = form.attr("msg-failure");
+                var msgError = form.attr("msg-error");
+
+                if (! msgSending) msgSending = 'Sending message. Just a second';
+                if (! msgSuccess) msgSuccess = 'Message sent. We will be in touch shortly';
+                if (! msgFailure) msgFailure = 'Message not sent. Please try again';
+                if (! msgError) msgError = 'Oops! An error occured and your message could not be sent.';
+
+                $('#token').val(token);
 
                 // Serialize the form data.
                 var formData = $(form).serialize();
 
-                form_msg('bg-warn', 'Sending message. Just a second');
+                form_msg('bg-warn', msgSending);
                 // Submit the form using AJAX.
                 $.ajax({
                     type: 'POST',
@@ -36,18 +46,18 @@ $(function() {
                     .done(function(response) {
                         if (response.status == "success") {
                             // Make sure that the formMessages div has the 'success' class.
-                            form_msg('bg-success', 'Message sent. We will be in touch shortly');
+                            form_msg('bg-success', msgSuccess);
                         } else {
-                            // Make sure that the formMessages div has the 'success' class.
-                            form_msg('bg-danger', 'Message not sent. Please try again');
+                            // Make sure that the formMessages div has the 'danger' class.
+                            form_msg('bg-danger', msgFailure);
                         }
 
                         // Clear the form.
                         $('#name, #email, #message').val('');
                     })
                     .fail(function(data) {
-                        // Make sure that the formMessages div has the 'error' class.
-                        form_msg('bg-danger', 'Oops! An error occured and your message could not be sent.');
+                        // Make sure that the formMessages div has the 'danger' class.
+                        form_msg('bg-danger', msgError);
                     });
 
             });
