@@ -1,3 +1,6 @@
 .idea
 .DS_Store
 store
+game/.idea
+game/LICENSE
+game/README.md

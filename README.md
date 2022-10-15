@@ -7,7 +7,7 @@ Color palette:
 * White (#ffffff)
 * Gray (#555555)
 * Black (#000000)
-* Púrpura (#8a4680)
+* Purple (#8a4680)
 
 Elements:
 * Web template [Hielo](https://templated.co/hielo)
