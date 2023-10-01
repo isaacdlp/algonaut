@@ -1,4 +1,4 @@
-# algonaut
+# Algonaut
 [Algonaut](http://algonaut.com)'s Website
 
 ## Design
