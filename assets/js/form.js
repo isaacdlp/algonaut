@@ -6,6 +6,7 @@ function form_msg(status, message) {
     $(formMessages).removeClass('bg-success');
     $(formMessages).addClass(status);
     $(formMessages).text(message);
+    $(formMessages).delay(5000).fadeOut(400)
 }
 
 $(function() {
@@ -18,8 +19,11 @@ $(function() {
         // Stop the browser from submitting the form.
         e.preventDefault();
 
+        var pkey = $("#capt").attr("src")
+        pkey = pkey.substring(pkey.indexOf("?render=") + 8)
+
         grecaptcha.ready(function() {
-            grecaptcha.execute('6Ld1dMwbAAAAALM4WzgGBZzCrxpDwPOpVbViieC-', {action: 'submit'}).then(function(token) {
+            grecaptcha.execute(pkey, {action: 'submit'}).then(function(token) {
 
                 var msgSending = form.attr("msg-sending");
                 var msgSuccess = form.attr("msg-success");
